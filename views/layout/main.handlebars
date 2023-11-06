@@ -12,8 +12,10 @@
 <head>Crowfunding App</head>
 <nav>
     <a href="#">Home</a>
-    <a href="/profile">Profile</a>
     <a href="/login">Login</a>
+    {{#if REQ.SESSIONS VAR HERE}}
+    <a href="/profile">Profile</a>
+    {{/if}}
 </nav>
     {{{body}}}
 </body>
